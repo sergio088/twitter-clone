@@ -1,12 +1,14 @@
 {
   "name": "meubanco",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Clone do X (Twitter) - Backend e Frontend",
+  "main": "server.js",
   "scripts": {
-    "tailwind": "npx @tailwindcss/cli -i ./X/src/input.css -o ./X/public/output.css --watch",
-    "server": "nodemon X/server.js",
-    "dev": "concurrently \"npm run tailwind\" \"npm run server\"",
-    "start": "nodemon usuarios-crud/server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./public/output.css",
+    "dev": "concurrently \"npm run tailwind\" \"npm run server\""
   },
   "keywords": [],
   "author": "",

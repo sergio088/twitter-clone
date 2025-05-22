@@ -6,6 +6,7 @@ const path = require("path");
 const livereload = require("livereload");
 const connectLivereload = require("connect-livereload");
 const bcrypt = require("bcrypt");
+const PORT = process.env.PORT || 5000;
 
 const liveReloadServer = livereload.createServer();
 liveReloadServer.watch(path.join(__dirname, "views", ".ejs"));
@@ -147,6 +148,6 @@ liveReloadServer.server.once("connection", () => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("server aberto");
 });
