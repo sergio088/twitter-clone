@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/css/style.css",
+    "tailwind": "npm run build:css -- --watch",
+    "start": "concurrently \"npm run tailwind\" \"npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^6.3.5"
+  }
+}

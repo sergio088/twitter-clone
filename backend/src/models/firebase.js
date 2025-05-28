@@ -7,7 +7,7 @@ if (process.env.FIREBASE_CONFIG_JSON) {
   serviceAccount = JSON.parse(process.env.FIREBASE_CONFIG_JSON);
 } else {
   // ambiente local - carrega do arquivo
-  serviceAccount = require("../firebase-config.json");
+  serviceAccount = require("../../firebase-config.json");
 }
 
 admin.initializeApp({
