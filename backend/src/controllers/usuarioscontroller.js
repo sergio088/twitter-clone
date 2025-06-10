@@ -16,6 +16,7 @@ async function verificarcadastrobody(req, res) {
 
 async function enviarcadastromongo(req, res) {
   const { nome, celular, email, senha, nascdata } = req.body;
+  console.log(nome, celular, email, senha, nascdata);
 
   try {
     const enviar = await enviarcadastro(nome, celular, email, nascdata, senha);

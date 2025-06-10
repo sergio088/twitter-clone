@@ -6,48 +6,52 @@
     <title>Document</title>
     <link href="/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black flex">
+  <body className="bg-black flex">
     <!-- Container principal -->
-    <div class="flex">
+    <div className="flex">
       <!-- Logo -->
-      <div class="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center h-screen">
         <img
           src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=w240-h480-rw"
           alt="X"
-          class="w-120"
+          className="w-120"
         />
       </div>
 
       <!-- Conteúdo -->
       <div
-        class="flex flex-col justify-center h-screen px-6 py-4 text-center space-y-4"
+        className="flex flex-col justify-center h-screen px-6 py-4 text-center space-y-4"
       >
         <!-- Título destacado com tamanho grande -->
-        <h1 class="text-white text-6xl font-bold py-2 leading-tight text-left">
+        <h1
+          className="text-white text-6xl font-bold py-2 leading-tight text-left"
+        >
           Acontecendo agora
         </h1>
 
         <!-- Botões -->
-        <div class="flex flex-col max-w-60 w-full">
-          <p class="text-white font-bold py-4 text-3xl text-center">
+        <div className="flex flex-col max-w-60 w-full">
+          <p className="text-white font-bold py-4 text-3xl text-center">
             Inscreva-se hoje
           </p>
           <a
             href="src/views/cadastro"
-            class="bg-blue-500 text-white rounded-2xl py-1 hover:bg-blue-600 transition"
+            className="bg-blue-500 text-white rounded-2xl py-1 hover:bg-blue-600 transition"
           >
             Criar conta
           </a>
 
-          <div class="flex items-center m-2 justify-center gap-2 text-gray-400">
-            <span class="flex-1 h-px bg-gray-700"></span>
+          <div
+            className="flex items-center m-2 justify-center gap-2 text-gray-400"
+          >
+            <span className="flex-1 h-px bg-gray-700"></span>
             <span>ou</span>
-            <span class="flex-1 h-px bg-gray-700"></span>
+            <span className="flex-1 h-px bg-gray-700"></span>
           </div>
 
           <a
             href="src/views/logar"
-            class="border border-gray-500 text-blue-500 rounded-2xl py-1 hover:bg-gray-700 transition"
+            className="border border-gray-500 text-blue-500 rounded-2xl py-1 hover:bg-gray-700 transition"
           >
             Entrar
           </a>

@@ -6,10 +6,10 @@
     <title>X.</title>
     <link href="/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-black flex items-center justify-center h-screen">
-    <div class="flex flex-col space-y-4">
+  <body className="bg-black flex items-center justify-center h-screen">
+    <div className="flex flex-col space-y-4">
       <!-- Logo e botão X -->
-      <div class="flex items-center">
+      <div className="flex items-center">
         <a href="/homepage">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="text-white size-4"
+            className="text-white size-4"
           >
             <path
               stroke-linecap="round"
@@ -29,34 +29,34 @@
         <img
           src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=w240-h480-rw"
           alt="X"
-          class="ml-14 w-10"
+          className="ml-14 w-10"
         />
       </div>
 
       <!-- Etapa 1 -->
-      <div id="step1" class="flex flex-col space-y-2">
+      <div id="step1" className="flex flex-col space-y-2">
         <input
           type="text"
           id="inputuser"
           required
           placeholder="Celular, e-mail ou nome de usuário"
-          class="border border-gray-500 text-white placeholder:text-gray-500 placeholder:text-xs px-2 py-1"
+          className="border border-gray-500 text-white placeholder:text-gray-500 placeholder:text-xs px-2 py-1"
         />
-        <span id="inputerro" class="text-xs text-red-500 hidden">
+        <span id="inputerro" className="text-xs text-red-500 hidden">
           Campo obrigatório
         </span>
       </div>
 
       <!-- Etapa 2 -->
-      <div id="step2" class="hidden flex flex-col space-y-2">
+      <div id="step2" className="hidden flex flex-col space-y-2">
         <input
           type="password"
           id="inputsenha"
           required
           placeholder="Senha"
-          class="border border-gray-500 text-white placeholder:text-gray-500 placeholder:text-xs px-2 py-1"
+          className="border border-gray-500 text-white placeholder:text-gray-500 placeholder:text-xs px-2 py-1"
         />
-        <span id="senhaerro" class="text-xs text-red-500 hidden">
+        <span id="senhaerro" className="text-xs text-red-500 hidden">
           Preencha a senha
         </span>
       </div>
@@ -66,7 +66,7 @@
         type="button"
         id="botaologin"
         onclick="entrar()"
-        class="w-full bg-gray-500 hover:bg-gray-600 text-black rounded-2xl py-1 transition"
+        className="w-full bg-gray-500 hover:bg-gray-600 text-black rounded-2xl py-1 transition"
       >
         Avançar
       </button>
@@ -75,7 +75,7 @@
       <a
         href="/src/views/cadastro"
         id="botaocriarconta"
-        class="bg-blue-500 hover:bg-blue-600 text-white rounded-2xl text-xs text-center py-1 transition"
+        className="bg-blue-500 hover:bg-blue-600 text-white rounded-2xl text-xs text-center py-1 transition"
       >
         Criar conta
       </a>
