@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
+    "prebuild": "npm run tailwindP",
     "tailwind": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch",
-    "start": "concurrently \"npm run dev\" \"npm run tailwind\""
+    "start": "concurrently \"npm run dev\" \"npm run tailwind\"",
+    "tailwindP": "npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.8",
